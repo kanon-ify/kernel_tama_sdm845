@@ -51,6 +51,8 @@ extern char __dtb_start[];
 extern char __dtb_end[];
 
 extern int of_fdt_get_ddrtype(void);
+extern int of_fdt_get_ddrrank(int channel);
+extern int of_fdt_get_ddrhbb(int channel, int rank);
 
 /* For scanning the flat device-tree at boot time */
 extern int of_scan_flat_dt(int (*it)(unsigned long node, const char *uname,
