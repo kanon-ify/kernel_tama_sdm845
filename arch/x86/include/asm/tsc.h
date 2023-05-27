@@ -28,7 +28,7 @@ static inline cycles_t get_cycles(void)
 }
 #define get_cycles get_cycles
 
-extern struct system_counterval_t convert_art_to_tsc(cycle_t art);
+extern struct system_counterval_t convert_art_to_tsc(u64 art);
 
 extern void tsc_init(void);
 extern void mark_tsc_unstable(char *reason);
